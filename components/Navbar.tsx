@@ -1,13 +1,13 @@
 import { Flex, Heading } from "@chakra-ui/react";
 
-import { ToggleTheme } from "./ToggleTheme";
+import ToggleTheme from "./ToggleTheme";
 
 export default function Navbar() {
   return (
     <Flex
       as="nav"
       align="center"
-      justify="space-between"
+      justify="space-around"
       wrap="wrap"
       padding="1rem"
       // bg="teal.500"

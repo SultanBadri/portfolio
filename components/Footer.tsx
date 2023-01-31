@@ -1,24 +1,26 @@
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text, useColorModeValue } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { css } from "@emotion/react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
-const linkStyle = (color: string) => css`
+const linkStyle = (backgroundColor: string) => css`
   padding: 0.375rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  background-color: #e5e7eb;
   transition-duration: 100ms;
   border-radius: 9999px;
-  color: black;
 
   &:hover {
-    color: ${color};
+    background-color: ${backgroundColor};
+    color: white;
   }
 `;
 
 export default function Footer() {
+  const color = useColorModeValue("black", "white");
+  const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
+
   return (
     <Flex
       as="footer"
@@ -36,6 +38,8 @@ export default function Footer() {
             target="_blank"
             aria-label="GitHub"
             css={linkStyle("#333")}
+            color={color}
+            bg={backgroundColor}
           >
             <FaGithub />
           </Link>
@@ -47,6 +51,8 @@ export default function Footer() {
             target="_blank"
             aria-label="LinkedIn"
             css={linkStyle("#0A66C2")}
+            color={color}
+            bg={backgroundColor}
           >
             <FaLinkedin />
           </Link>
@@ -58,6 +64,8 @@ export default function Footer() {
             target="_blank"
             aria-label="Email"
             css={linkStyle("#BB001B")}
+            color={color}
+            bg={backgroundColor}
           >
             <FaEnvelope />
           </Link>
