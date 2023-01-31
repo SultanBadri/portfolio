@@ -2,7 +2,7 @@ import { Flex, Heading } from "@chakra-ui/react";
 
 import { ToggleTheme } from "./ToggleTheme";
 
-export function Navbar() {
+export default function Navbar() {
   return (
     <Flex
       as="nav"
