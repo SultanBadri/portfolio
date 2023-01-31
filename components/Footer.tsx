@@ -4,17 +4,17 @@ import { css } from "@emotion/react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
-const linkStyle = (backgroundColor: string) => css`
+const linkStyle = (color: string) => css`
   padding: 0.375rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   background-color: #e5e7eb;
   transition-duration: 100ms;
   border-radius: 9999px;
-  // color: white;
+  color: black;
 
   &:hover {
-    background-color: ${backgroundColor};
+    color: ${color};
   }
 `;
 
@@ -57,7 +57,7 @@ export default function Footer() {
             href="mailto:sultanbadri@berkeley.edu"
             target="_blank"
             aria-label="Email"
-            css={linkStyle("#c71610")}
+            css={linkStyle("#BB001B")}
           >
             <FaEnvelope />
           </Link>
