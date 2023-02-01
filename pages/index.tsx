@@ -1,12 +1,15 @@
 import Head from "next/head";
-
 import {
   Container,
   Box,
   useColorModeValue,
   Heading,
   Text,
+  Flex,
 } from "@chakra-ui/react";
+
+import { Links } from "@/components/Links";
+
 import { css } from "@emotion/react";
 
 const sectionStyle = () => css`
@@ -34,16 +37,18 @@ export default function Home() {
           bg={useColorModeValue("gray.100", "whiteAlpha.200")}
           css={{ backdropFilter: "blur(10px)" }}
         >
-          Hello, I&apos;m a student and developer from the Bay Area!
+          Hello 👋, I&apos;m a student and aspiring developer from the Bay Area!
         </Box>
 
-        <Box>
-          <Heading as="h1" variant="page-title">
-            Sultan Badri
-          </Heading>
-
-          <p>Student / Developer / Designer</p>
-        </Box>
+        <Flex align="center" justifyContent="space-between">
+          <Box>
+            <Heading as="h1" variant="page-title">
+              Sultan Badri
+            </Heading>
+            <p>Student / Developer / Designer</p>
+          </Box>
+          <Links />
+        </Flex>
 
         <section>
           <Heading as="h2" size="md" css={sectionStyle}>
@@ -60,6 +65,22 @@ export default function Home() {
 
           <Text>2017 - Not born</Text>
           <Text>2018 - Born</Text>
+        </section>
+
+        <section>
+          <Heading as="h2" size="md" css={sectionStyle}>
+            Hobbies
+          </Heading>
+
+          <Text>Coming soon!</Text>
+        </section>
+
+        <section>
+          <Heading as="h2" size="md" css={sectionStyle}>
+            Projects
+          </Heading>
+
+          <Text>Coming soon!</Text>
         </section>
       </Container>
     </>
