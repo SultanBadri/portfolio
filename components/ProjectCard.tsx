@@ -14,9 +14,8 @@ export function ProjectCard({ title, description, image, url }: Project) {
       <Text>{description}</Text>
       <Link href={url} target="_blank" aria-label="GitHub">
         <Text>
-          <Flex>
-            Repo link <FaExternalLinkAlt />
-          </Flex>
+          Repo link
+          <FaExternalLinkAlt />
         </Text>
       </Link>
     </Box>
