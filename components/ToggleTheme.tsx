@@ -9,7 +9,7 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 type ToggleThemeProps = Omit<IconButtonProps, "aria-label">;
 
-export default function ToggleTheme(props: ToggleThemeProps) {
+export const ToggleTheme = (props: ToggleThemeProps) => {
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue("dark", "light");
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
@@ -27,4 +27,4 @@ export default function ToggleTheme(props: ToggleThemeProps) {
       {...props}
     />
   );
-}
+};

@@ -4,7 +4,7 @@ import { css } from "@emotion/react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
-const linkStyle = (backgroundColor: string) => css`
+export const linkStyle = (backgroundColor: string) => css`
   padding: 0.375rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -17,7 +17,7 @@ const linkStyle = (backgroundColor: string) => css`
   }
 `;
 
-export default function Footer() {
+export const Footer = () => {
   const color = useColorModeValue("black", "white");
   const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
 
@@ -29,7 +29,6 @@ export default function Footer() {
       direction="column"
       wrap="wrap"
       padding="1rem"
-      // bg="teal.500"
     >
       <Flex align="center">
         <Tippy content="GitHub">
@@ -77,4 +76,4 @@ export default function Footer() {
       </Text>
     </Flex>
   );
-}
+};
