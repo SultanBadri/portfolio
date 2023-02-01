@@ -83,7 +83,6 @@ export default function Home() {
             Projects
           </Heading>
 
-          <Text>Coming soon!</Text>
           <Projects projects={projects} />
         </section>
       </Container>
