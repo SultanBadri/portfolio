@@ -9,8 +9,11 @@ import {
 } from "@chakra-ui/react";
 
 import { Links } from "@/components/Links";
+import { Projects } from "@/components/Projects";
 
 import { css } from "@emotion/react";
+
+import { projects } from "@/public/data/projects";
 
 const sectionStyle = () => css`
   text-decoration: underline;
@@ -81,6 +84,7 @@ export default function Home() {
           </Heading>
 
           <Text>Coming soon!</Text>
+          <Projects projects={projects} />
         </section>
       </Container>
     </>
