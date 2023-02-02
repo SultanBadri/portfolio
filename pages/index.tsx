@@ -31,7 +31,7 @@ export default function Home() {
       <Head>
         <title>Sultan Badri | Portfolio</title>
       </Head>
-      <Container>
+      <Container maxW="2xl">
         <Box
           borderRadius="lg"
           mb={6}

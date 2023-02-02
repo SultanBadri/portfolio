@@ -1,38 +1,41 @@
-import { Box, Heading, Text, Button, Link, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Link, Image } from "@chakra-ui/react";
 
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { Project } from "./Projects";
 
-export function ProjectCard({ title, description, image, url }: Project) {
+export function ProjectCard({
+  title,
+  description,
+  imageUrl,
+  repoUrl,
+}: Project) {
   return (
-    <Box>
+    <Box w="300px" mt={4}>
       <Image
-        src={image}
+        src={imageUrl}
         alt={description}
-        htmlHeight="150"
-        htmlWidth="250"
+        h="150"
+        w="250"
         rounded="md"
       ></Image>
       <Heading as="h4" size="sm">
         {title}
       </Heading>
       <Text>{description}</Text>
-      <Button>
-        <Link
-          href={url}
-          target="_blank"
-          aria-label="GitHub"
-          display="flex"
-          alignItems="center"
-          color={"blue.500"}
-        >
-          Repo link
-          <Box ml={2}>
-            <FaExternalLinkAlt />
-          </Box>
-        </Link>
-      </Button>
+      <Link
+        href={repoUrl}
+        target="_blank"
+        aria-label="GitHub"
+        display="flex"
+        alignItems="center"
+        color={"blue.500"}
+      >
+        Repo link
+        <Box ml={2}>
+          <FaExternalLinkAlt />
+        </Box>
+      </Link>
     </Box>
   );
 }
