@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "Memory Cards",
+    description: "Memory cards game.",
+    imageUrl: "images/memory-cards.png",
+    repoUrl: "https://github.com/SultanBadri/memory-cards",
+  },
+  {
+    title: "Resume Builder",
+    description: "Resume builder application.",
+    imageUrl: "images/resume-builder.png",
+    repoUrl: "https://github.com/SultanBadri/cv-project",
+  },
+  {
+    title: "Todo List",
+    description: "Todo list application.",
+    imageUrl: "images/todo-list.png",
+    repoUrl: "https://github.com/SultanBadri/todo-list",
+  },
+  {
     title: "Tic Tac Toe",
     description: "Tic Tac Toe game.",
     imageUrl: "images/tic-tac-toe.png",
