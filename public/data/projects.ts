@@ -1,5 +1,41 @@
 export const projects = [
   {
+    title: "Todo CRUD App",
+    description: "Todo CRUD application.",
+    imageUrl: "images/todo-crud.png",
+    repoUrl: "https://github.com/SultanBadri/svelte-go-todo-app",
+  },
+  {
+    title: "Go Hangman",
+    description: "Terminal hangman game in Go.",
+    imageUrl: "images/go-hangman.png",
+    repoUrl: "https://github.com/SultanBadri/go-hangman",
+  },
+  {
+    title: "MERN Blog",
+    description: "Blog application.",
+    imageUrl: "images/mern-blog.png",
+    repoUrl: "https://github.com/SultanBadri/MERN-blog",
+  },
+  {
+    title: "Members Only",
+    description: "Members only application.",
+    imageUrl: "images/members-only.png",
+    repoUrl: "https://github.com/SultanBadri/members-only",
+  },
+  {
+    title: "Inventory Application",
+    description: "Inventory application.",
+    imageUrl: "images/inventory-app.png",
+    repoUrl: "https://github.com/SultanBadri/inventory-application",
+  },
+  {
+    title: "Shopping Cart",
+    description: "Shopping cart application.",
+    imageUrl: "images/shopping-cart.png",
+    repoUrl: "https://github.com/SultanBadri/shopping-cart",
+  },
+  {
     title: "Memory Cards",
     description: "Memory cards game.",
     imageUrl: "images/memory-cards.png",
@@ -10,6 +46,12 @@ export const projects = [
     description: "Resume builder application.",
     imageUrl: "images/resume-builder.png",
     repoUrl: "https://github.com/SultanBadri/cv-project",
+  },
+  {
+    title: "Weather App",
+    description: "Weather app.",
+    imageUrl: "images/weather-app.png",
+    repoUrl: "https://sultanbadri.github.io/weather-app/",
   },
   {
     title: "Todo List",

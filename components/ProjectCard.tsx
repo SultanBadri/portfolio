@@ -15,8 +15,8 @@ export function ProjectCard({
       <Image
         src={imageUrl}
         alt={description}
-        h="150"
-        w="250"
+        height={150}
+        width={250}
         rounded="md"
       ></Image>
       <Heading as="h4" size="sm">
