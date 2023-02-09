@@ -5,8 +5,11 @@ import { ToggleTheme } from "./ToggleTheme";
 
 export function Navbar() {
   const [scroll, setScroll] = useState(false);
-  const backgroundColor = useColorModeValue("white", "gray.800");
-  const boxShadow = useColorModeValue("0 4px 8px rgba(0, 0, 0, 0.1)", "lg");
+  const boxShadow = useColorModeValue("0 4px 8px rgba(0, 0, 0, 0.1)", "md");
+  const blur = useColorModeValue(
+    `blur(${scroll ? "8px" : "0"})`,
+    `blur(${scroll ? "16px" : "0"})`
+  );
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,14 +28,14 @@ export function Navbar() {
       align="center"
       justify="space-around"
       wrap="wrap"
-      padding="1rem"
-      bg={backgroundColor}
+      padding="0.8rem"
       boxShadow={scroll ? boxShadow : "none"}
       transition="all 0.2s"
       position="sticky"
       top={0}
       width="100%"
       zIndex={10}
+      style={{ backdropFilter: blur }}
     >
       <Flex align="center" mr={5}>
         <Heading as="h2" size="md" letterSpacing={"0.1rem"}>

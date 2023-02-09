@@ -9,8 +9,10 @@ import {
 } from "@chakra-ui/react";
 
 import { Links } from "@/components/Links";
-import { Projects } from "@/components/Projects";
+import { Bio } from "@/components/Bio";
 import { Skills } from "@/components/Skills";
+import { Hobbies } from "@/components/Hobbies";
+import { Projects } from "@/components/Projects";
 
 import { css } from "@emotion/react";
 
@@ -67,7 +69,7 @@ export default function Home() {
             Bio
           </Heading>
 
-          <Text>Coming soon!</Text>
+          <Bio />
         </section>
 
         <section>
@@ -83,7 +85,7 @@ export default function Home() {
             Hobbies
           </Heading>
 
-          <Text>Coming soon!</Text>
+          <Hobbies />
         </section>
 
         <section>

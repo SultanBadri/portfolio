@@ -1,4 +1,5 @@
-import { Box, Flex, Image, useColorModeValue } from "@chakra-ui/react";
+import Image from "next/image";
+import { Box, Flex, useColorModeValue } from "@chakra-ui/react";
 
 import { icons } from "@/public/data/icons";
 
