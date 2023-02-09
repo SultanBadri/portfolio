@@ -15,6 +15,7 @@ export const ToggleTheme = (props: ToggleThemeProps) => {
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
   const color = useColorModeValue("black", "white");
   const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
+  const hoverBackgroundColor = useColorModeValue("gray.200", "whiteAlpha.300");
 
   return (
     <IconButton
@@ -29,7 +30,7 @@ export const ToggleTheme = (props: ToggleThemeProps) => {
       aria-label={`Switch to ${text} mode`}
       {...props}
       _hover={{
-        bg: useColorModeValue("gray.200", "whiteAlpha.300"),
+        bg: hoverBackgroundColor,
       }}
     />
   );

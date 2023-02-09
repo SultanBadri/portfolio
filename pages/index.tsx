@@ -10,6 +10,7 @@ import {
 
 import { Links } from "@/components/Links";
 import { Projects } from "@/components/Projects";
+import { Skills } from "@/components/Skills";
 
 import { css } from "@emotion/react";
 
@@ -68,6 +69,14 @@ export default function Home() {
 
           <Text>2017 - Not born</Text>
           <Text>2018 - Born</Text>
+        </section>
+
+        <section>
+          <Heading as="h2" size="md" css={sectionStyle}>
+            Skills
+          </Heading>
+
+          <Skills />
         </section>
 
         <section>

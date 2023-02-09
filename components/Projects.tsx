@@ -12,8 +12,8 @@ export type Project = {
 export function Projects({ projects }: { projects: Project[] }) {
   return (
     <Flex wrap="wrap">
-      {projects.map((project, i) => (
-        <ProjectCard key={i} {...project} />
+      {projects.map((project, index) => (
+        <ProjectCard key={index} {...project} />
       ))}
     </Flex>
   );
