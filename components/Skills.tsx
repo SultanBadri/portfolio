@@ -8,7 +8,7 @@ export function Skills() {
   const hoverBackgroundColor = useColorModeValue("gray.200", "whiteAlpha.300");
 
   return (
-    <Box>
+    <Box mt={3} mb={3}>
       <Flex wrap="wrap">
         {icons.map((icon, index) => (
           <Box

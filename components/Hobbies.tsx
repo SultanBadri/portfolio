@@ -1,9 +1,13 @@
-import { Text } from "@chakra-ui/react";
+import { Text, Box } from "@chakra-ui/react";
 
 export function Hobbies() {
   return (
     <>
-      <Text>Coming soon</Text>
+      <Box mt={3} mb={3}>
+        <Text>
+          Programming, Video Games, Board Games, MMA, learning Spanish, YouTube
+        </Text>
+      </Box>
     </>
   );
 }

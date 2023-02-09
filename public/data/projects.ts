@@ -61,7 +61,7 @@ export const projects = [
   },
   {
     title: "Virtual Library",
-    description: "Library to store your read/unread books.",
+    description: "Library for storing read/unread books.",
     repoUrl: "https://github.com/SultanBadri/virtual-library",
   },
 ];

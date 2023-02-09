@@ -4,11 +4,12 @@ import {
   Box,
   useColorModeValue,
   Heading,
-  Text,
   Flex,
+  Text,
 } from "@chakra-ui/react";
 
 import { Links } from "@/components/Links";
+import { About } from "@/components/About";
 import { Bio } from "@/components/Bio";
 import { Skills } from "@/components/Skills";
 import { Hobbies } from "@/components/Hobbies";
@@ -47,12 +48,14 @@ export default function Home() {
         </Box>
 
         <Flex align="center" justifyContent="space-between">
-          <Box>
+          <Box mt={3} mb={3}>
             <Heading as="h1" variant="page-title">
               Sultan Badri
             </Heading>
-            <p>Student / Developer / Designer</p>
+
+            <Text>Student / Developer / Designer</Text>
           </Box>
+
           <Links />
         </Flex>
 
@@ -61,7 +64,7 @@ export default function Home() {
             About me
           </Heading>
 
-          <Text>An aspiring developer.</Text>
+          <About />
         </section>
 
         <section>
@@ -82,7 +85,7 @@ export default function Home() {
 
         <section>
           <Heading as="h2" size="md" css={sectionStyle}>
-            Hobbies
+            Hobbies & Interests
           </Heading>
 
           <Hobbies />
