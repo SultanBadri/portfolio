@@ -9,7 +9,7 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
-import { Links } from "@/components/Links";
+import { Header } from "@/components/Header";
 import { About } from "@/components/About";
 import { Bio } from "@/components/Bio";
 import { Skills } from "@/components/Skills";
@@ -31,82 +31,57 @@ const sectionStyle = () => css`
 `;
 
 export default function Home() {
-  const [isBelow450px] = useMediaQuery("(max-width: 450px)");
-
   return (
     <>
       <Head>
         <title>Sultan Badri | Portfolio</title>
       </Head>
-      <Container maxW="2xl">
-        <Box
-          borderRadius="lg"
-          mb={6}
-          p={3}
-          textAlign="center"
-          bg={useColorModeValue("gray.100", "whiteAlpha.200")}
-          css={{ backdropFilter: "blur(10px)" }}
-        >
-          Hello 👋, I&apos;m a student and aspiring developer from the Bay Area!
-        </Box>
 
-        <Flex
-          mt={3}
-          mb={3}
-          wrap="wrap"
-          justifyContent="space-between"
-          flexDirection={isBelow450px ? "column" : "row"}
-        >
-          <Box>
-            <Heading as="h1" variant="page-title">
-              Sultan Badri
+      <main>
+        <Container maxW="2xl">
+          <Header />
+
+          <section id="about">
+            <Heading as="h2" size="md" css={sectionStyle}>
+              About me
             </Heading>
 
-            <Text>Student / Developer / Designer</Text>
-          </Box>
-          <Links />
-        </Flex>
+            <About />
+          </section>
 
-        <section>
-          <Heading as="h2" size="md" css={sectionStyle}>
-            About me
-          </Heading>
+          <section id="bio">
+            <Heading as="h2" size="md" css={sectionStyle}>
+              Bio
+            </Heading>
 
-          <About />
-        </section>
+            <Bio />
+          </section>
 
-        <section>
-          <Heading as="h2" size="md" css={sectionStyle}>
-            Bio
-          </Heading>
+          <section id="skills">
+            <Heading as="h2" size="md" css={sectionStyle}>
+              Skills
+            </Heading>
 
-          <Bio />
-        </section>
+            <Skills />
+          </section>
 
-        <section>
-          <Heading as="h2" size="md" css={sectionStyle}>
-            Skills
-          </Heading>
+          <section id="hobbies">
+            <Heading as="h2" size="md" css={sectionStyle}>
+              Hobbies & Interests
+            </Heading>
 
-          <Skills />
-        </section>
+            <Hobbies />
+          </section>
 
-        <section>
-          <Heading as="h2" size="md" css={sectionStyle}>
-            Hobbies & Interests
-          </Heading>
+          <section id="projects">
+            <Heading as="h2" size="md" css={sectionStyle}>
+              Projects
+            </Heading>
 
-          <Hobbies />
-        </section>
-
-        <section>
-          <Heading as="h2" size="md" css={sectionStyle}>
-            Projects
-          </Heading>
-
-          <Projects projects={projects} />
-        </section>
-      </Container>
+            <Projects projects={projects} />
+          </section>
+        </Container>
+      </main>
     </>
   );
 }
