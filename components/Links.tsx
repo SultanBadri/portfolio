@@ -24,7 +24,7 @@ export function Links() {
   const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
 
   return (
-    <Flex align="center">
+    <Flex align="center" mt={2}>
       <Tippy content="GitHub">
         <Link
           href="https://github.com/SultanBadri"

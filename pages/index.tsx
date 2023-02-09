@@ -6,6 +6,7 @@ import {
   Heading,
   Flex,
   Text,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 import { Links } from "@/components/Links";
@@ -30,6 +31,8 @@ const sectionStyle = () => css`
 `;
 
 export default function Home() {
+  const [isBelow450px] = useMediaQuery("(max-width: 450px)");
+
   return (
     <>
       <Head>
@@ -47,15 +50,20 @@ export default function Home() {
           Hello 👋, I&apos;m a student and aspiring developer from the Bay Area!
         </Box>
 
-        <Flex align="center" justifyContent="space-between">
-          <Box mt={3} mb={3}>
+        <Flex
+          mt={3}
+          mb={3}
+          wrap="wrap"
+          justifyContent="space-between"
+          flexDirection={isBelow450px ? "column" : "row"}
+        >
+          <Box>
             <Heading as="h1" variant="page-title">
               Sultan Badri
             </Heading>
 
             <Text>Student / Developer / Designer</Text>
           </Box>
-
           <Links />
         </Flex>
 

@@ -1,5 +1,10 @@
 import { useState, useEffect } from "react";
-import { Flex, Heading, useColorModeValue } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  useColorModeValue,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 import { ToggleTheme } from "./ToggleTheme";
 
@@ -10,6 +15,7 @@ export function Navbar() {
     `blur(${scroll ? "8px" : "0"})`,
     `blur(${scroll ? "16px" : "0"})`
   );
+  const [isBelow1000px] = useMediaQuery("(max-width: 1000px)");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -26,7 +32,7 @@ export function Navbar() {
     <Flex
       as="nav"
       align="center"
-      justify="space-around"
+      justify={isBelow1000px ? "space-between" : "space-around"}
       wrap="wrap"
       padding="0.8rem"
       boxShadow={scroll ? boxShadow : "none"}

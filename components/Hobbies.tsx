@@ -5,7 +5,7 @@ export function Hobbies() {
     <>
       <Box mt={3} mb={3}>
         <Text>
-          Programming, Video Games, Board Games, MMA, learning Spanish, YouTube
+          Programming, Video Games, Board Games, MMA, Learning Spanish, YouTube
         </Text>
       </Box>
     </>
