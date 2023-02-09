@@ -67,8 +67,7 @@ export default function Home() {
             Bio
           </Heading>
 
-          <Text>2017 - Not born</Text>
-          <Text>2018 - Born</Text>
+          <Text>Coming soon!</Text>
         </section>
 
         <section>
