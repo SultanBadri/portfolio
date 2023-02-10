@@ -16,6 +16,7 @@ export function Header() {
     <>
       <Box
         borderRadius="lg"
+        mt={6}
         mb={6}
         p={3}
         textAlign="center"
@@ -26,14 +27,18 @@ export function Header() {
       </Box>
 
       <Flex
-        mt={3}
-        mb={3}
+        mt={6}
+        mb={6}
         wrap="wrap"
         justifyContent="space-between"
         flexDirection={isBelow450px ? "column" : "row"}
       >
         <Box>
-          <Heading as="h1" variant="page-title">
+          <Heading
+            as="h1"
+            bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
+            bgClip="text"
+          >
             Sultan Badri
           </Heading>
 

@@ -44,7 +44,13 @@ export function Navbar() {
       style={{ backdropFilter: blur }}
     >
       <Flex align="center" mr={5}>
-        <Heading as="h2" size="md" letterSpacing={"0.1rem"}>
+        <Heading
+          as="h2"
+          size="md"
+          bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
+          bgClip="text"
+          letterSpacing={"0.1rem"}
+        >
           Sultan Badri
         </Heading>
       </Flex>

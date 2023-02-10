@@ -14,7 +14,7 @@ export function About() {
 
   return (
     <>
-      <Box mt={3} mb={3}>
+      <Box mt={3} mb={4}>
         A driven and ambitious undergraduate student fueled by a passion for{" "}
         <Text css={codeStyle} bg={backgroundColor} color={color}>
           front-end

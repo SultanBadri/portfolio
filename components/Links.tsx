@@ -53,7 +53,7 @@ export function Links() {
           href="mailto:sultanbadri@berkeley.edu"
           target="_blank"
           aria-label="Email"
-          css={linkStyle("#BB001B")}
+          css={linkStyle("#0099ff")}
           bg={backgroundColor}
         >
           <FaEnvelope />
