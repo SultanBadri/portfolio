@@ -1,13 +1,5 @@
 import Head from "next/head";
-import {
-  Container,
-  Box,
-  useColorModeValue,
-  Heading,
-  Flex,
-  Text,
-  useMediaQuery,
-} from "@chakra-ui/react";
+import { Container, Heading } from "@chakra-ui/react";
 
 import { Header } from "@/components/Header";
 import { About } from "@/components/About";
@@ -35,6 +27,14 @@ export default function Home() {
     <>
       <Head>
         <title>Sultan Badri | Portfolio</title>
+        <meta
+          name="description"
+          content="Sultan Badri web development portfolio website."
+        />
+        <meta
+          name="keywords"
+          content="Sultan Badri, portfolio, website, student, developer, web development, front-end, full-stack"
+        />
       </Head>
 
       <main>
