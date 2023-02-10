@@ -1,67 +1,72 @@
 export const projects = [
   {
+    title: "Portfolio",
+    technologies: "Next.js, TypeScript, Chakra UI",
+    repoUrl: "https://github.com/SultanBadri/portfolio",
+  },
+  {
     title: "Todo CRUD App",
-    description: "Todo CRUD application.",
+    technologies: "Svelte Go, TypeScript, Vite",
     repoUrl: "https://github.com/SultanBadri/svelte-go-todo-app",
   },
   {
     title: "Go Hangman",
-    description: "Terminal hangman game in Go.",
+    technologies: "Go, JSON Dictionary API",
     repoUrl: "https://github.com/SultanBadri/go-hangman",
   },
   {
     title: "MERN Blog",
-    description: "Blog application.",
+    technologies: "MERN, JWT, Tailwind CSS",
     repoUrl: "https://github.com/SultanBadri/MERN-blog",
   },
   {
     title: "Members Only",
-    description: "Members only application.",
+    technologies: "Node, Express, MongoDB, passport",
     repoUrl: "https://github.com/SultanBadri/members-only",
   },
   {
     title: "Inventory Application",
-    description: "Inventory application.",
+    technologies: "Node, Express, MongoDB, pug.js",
     repoUrl: "https://github.com/SultanBadri/inventory-application",
   },
   {
     title: "Shopping Cart",
-    description: "Shopping cart application.",
+    technologies: "React, TypeScript, Styled Components",
     repoUrl: "https://github.com/SultanBadri/shopping-cart",
   },
   {
     title: "Memory Cards",
-    description: "Memory cards game.",
+    technologies: "React, TypeScript, Styled Components",
     repoUrl: "https://github.com/SultanBadri/memory-cards",
   },
   {
     title: "Resume Builder",
-    description: "Resume builder application.",
+    technologies: "React, TypeScript, Styled Components",
     repoUrl: "https://github.com/SultanBadri/cv-project",
   },
   {
     title: "Weather App",
-    description: "Weather application.",
-    repoUrl: "https://sultanbadri.github.io/weather-app/",
+    technologies: "TypeScript, Webpack, Weather API",
+    repoUrl: "https://github.com/SultanBadri/weather-app",
   },
   {
     title: "Todo List",
-    description: "Todo list application.",
+    technologies: "JavaScript, Webpack, localStorage",
     repoUrl: "https://github.com/SultanBadri/todo-list",
   },
   {
-    title: "Tic Tac Toe",
-    description: "Tic Tac Toe game.",
-    repoUrl: "https://github.com/SultanBadri/tic-tac-toe",
-  },
-  {
     title: "Restaurant Page",
-    description: "A fake restaurant page.",
+    technologies: "JavaScript, Webpack, HTML, CSS",
     repoUrl: "https://github.com/SultanBadri/restaurant-page",
   },
   {
+    title: "Tic Tac Toe",
+    technologies: "JavaScript, HTML, CSS",
+    repoUrl: "https://github.com/SultanBadri/tic-tac-toe",
+  },
+  {
     title: "Virtual Library",
-    description: "Library for storing read/unread books.",
+    technologies: "JavaScript, HTML, CSS, localStorage",
     repoUrl: "https://github.com/SultanBadri/virtual-library",
   },
 ];

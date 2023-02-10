@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { Project } from "./Projects";
 
-export function ProjectCard({ title, description, repoUrl }: Project) {
+export function ProjectCard({ title, technologies, repoUrl }: Project) {
   const linkColor = useColorModeValue("pink.600", "pink.400");
 
   return (
@@ -13,7 +13,7 @@ export function ProjectCard({ title, description, repoUrl }: Project) {
         {title}
       </Heading>
 
-      <Text>{description}</Text>
+      <Text>{technologies}</Text>
 
       <Link
         href={repoUrl}

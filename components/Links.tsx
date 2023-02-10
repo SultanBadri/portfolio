@@ -50,7 +50,7 @@ export function Links() {
 
       <Tippy content="Email">
         <Link
-          href="mailto:sultanbadri@berkeley.edu"
+          href="mailto:sultanbadri.cal@gmail.com"
           target="_blank"
           aria-label="Email"
           css={linkStyle("#0099ff")}

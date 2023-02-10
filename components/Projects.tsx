@@ -4,7 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export type Project = {
   title: string;
-  description: string;
+  technologies: string;
   repoUrl: string;
 };
 

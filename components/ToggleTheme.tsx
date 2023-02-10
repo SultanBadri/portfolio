@@ -21,10 +21,9 @@ export const ToggleTheme = (props: ToggleThemeProps) => {
     <IconButton
       size="md"
       fontSize="lg"
-      variant="ghost"
       color={color}
       bg={backgroundColor}
-      marginLeft="2"
+      ml={2}
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
       aria-label={`Switch to ${text} mode`}
