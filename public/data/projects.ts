@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Portfolio",
+    title: "Current Portfolio",
     technologies: "Next.js, TypeScript, Chakra UI",
     repoUrl: "https://github.com/SultanBadri/portfolio",
   },
@@ -48,6 +48,11 @@ export const projects = [
     title: "Weather App",
     technologies: "TypeScript, Webpack, Weather API",
     repoUrl: "https://github.com/SultanBadri/weather-app",
+  },
+  {
+    title: "First Portfolio Site",
+    technologies: "JavaScript, HTML, SCSS",
+    repoUrl: "https://github.com/SultanBadri/sultanbadri.github.io",
   },
   {
     title: "Todo List",

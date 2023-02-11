@@ -14,7 +14,7 @@ export function About() {
 
   return (
     <Box mt={3} mb={4}>
-      A driven and ambitious undergraduate student fueled by a passion for{" "}
+      A motivated and enthusiastic undergraduate student fueled by a love for{" "}
       <Text css={codeStyle} bg={backgroundColor} color={color}>
         front-end
       </Text>{" "}
@@ -22,10 +22,10 @@ export function About() {
       <Text css={codeStyle} bg={backgroundColor} color={color}>
         full-stack
       </Text>{" "}
-      development. Always on the lookout for new and exciting technologies to
-      master and seeking out internship opportunities to gain valuable hands-on
-      experience in software engineering. Always eager to learn, grow, and make
-      a difference in the field of technology.
+      web development. Always on the lookout for new and exciting technologies
+      to master and seeking out internship opportunities to gain valuable
+      hands-on experience in software engineering. Always eager to learn, grow,
+      and make a difference in the field of technology.
     </Box>
   );
 }
