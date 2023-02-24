@@ -27,40 +27,6 @@ export default function Home() {
     <>
       <Head>
         <title>Sultan Badri | Portfolio</title>
-        <meta
-          name="description"
-          content="Sultan Badri's personal portfolio website showcasing his skills as a web developer and software engineer."
-        />
-        <meta
-          name="keywords"
-          content="Sultan Badri, portfolio, web developer, software engineer, front-end, full-stack"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta property="og:title" content="Sultan Badri | Portfolio" />
-        <meta
-          property="og:description"
-          content="Sultan Badri's personal portfolio website showcasing his skills as a web developer and software engineer."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sultanbadri.vercel.app/" />
-        <meta
-          property="og:image"
-          content="https://sultanbadri.vercel.app/favicon.ico"
-        />
-        <meta
-          property="og:image:alt"
-          content="Sultan Badri Portfolio Favicon"
-        />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Sultan Badri | Portfolio" />
-        <meta
-          name="twitter:description"
-          content="Sultan Badri's personal portfolio website showcasing his skills as a web developer and software engineer."
-        />
-        <meta
-          name="twitter:image"
-          content="https://sultanbadri.vercel.app/favicon.ico"
-        />
       </Head>
 
       <main>
