@@ -40,7 +40,6 @@ export default function Document() {
           name="twitter:image"
           content="https://sultanbadri.vercel.app/favicon/favicon.ico"
         />
-        <link rel="icon" href="/favicon/favicon.ico?v=2" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
