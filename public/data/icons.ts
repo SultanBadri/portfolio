@@ -35,6 +35,16 @@ export const icons = [
     name: "MongoDB",
   },
   {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    alt: "Angular logo",
+    name: "Angular",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+    alt: "Svelte logo",
+    name: "Svelte",
+  },
+  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
     alt: "GraphQL logo",
     name: "GraphQL",
@@ -58,11 +68,6 @@ export const icons = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg",
     alt: "R logo",
     name: "R",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
-    alt: "Svelte logo",
-    name: "Svelte",
   },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
