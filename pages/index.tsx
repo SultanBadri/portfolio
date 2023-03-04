@@ -1,11 +1,11 @@
 import Head from "next/head";
 import { Container, Heading, Text } from "@chakra-ui/react";
 import {
-  FcOpenedFolder,
   FcAbout,
-  FcBriefcase,
+  FcPlanner,
   FcSearch,
   FcLike,
+  FcOpenedFolder,
 } from "react-icons/fc";
 
 import { Header } from "@/components/Header";
@@ -63,7 +63,7 @@ export default function Home() {
           <section id="bio">
             <Heading as="h2" size="md" css={sectionStyle}>
               <Text css={textStyle}>
-                Work & Education <FcBriefcase />
+                Work & Education <FcPlanner />
               </Text>
             </Heading>
 
