@@ -49,11 +49,11 @@ export function Navbar() {
           size="md"
           bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
           bgClip="text"
-          letterSpacing={"0.1rem"}
         >
           Sultan Badri
         </Heading>
       </Flex>
+
       <ToggleTheme />
     </Flex>
   );

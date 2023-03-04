@@ -1,5 +1,12 @@
 import Head from "next/head";
-import { Container, Heading } from "@chakra-ui/react";
+import { Container, Heading, Text } from "@chakra-ui/react";
+import {
+  FcOpenedFolder,
+  FcAbout,
+  FcBriefcase,
+  FcSearch,
+  FcLike,
+} from "react-icons/fc";
 
 import { Header } from "@/components/Header";
 import { About } from "@/components/About";
@@ -22,6 +29,16 @@ const sectionStyle = () => css`
   margin-bottom: 4px;
 `;
 
+const textStyle = () => css`
+  display: flex;
+  align-items: center;
+  vertical-align: bottom;
+
+  svg {
+    margin-left: 5px;
+  }
+`;
+
 export default function Home() {
   return (
     <>
@@ -35,7 +52,9 @@ export default function Home() {
 
           <section id="about">
             <Heading as="h2" size="md" css={sectionStyle}>
-              About me
+              <Text css={textStyle}>
+                About me <FcAbout />
+              </Text>
             </Heading>
 
             <About />
@@ -43,7 +62,9 @@ export default function Home() {
 
           <section id="bio">
             <Heading as="h2" size="md" css={sectionStyle}>
-              Bio
+              <Text css={textStyle}>
+                Work & Education <FcBriefcase />
+              </Text>
             </Heading>
 
             <Bio />
@@ -51,7 +72,9 @@ export default function Home() {
 
           <section id="skills">
             <Heading as="h2" size="md" css={sectionStyle}>
-              Skills
+              <Text css={textStyle}>
+                Skills <FcSearch />
+              </Text>
             </Heading>
 
             <Skills />
@@ -59,7 +82,9 @@ export default function Home() {
 
           <section id="hobbies">
             <Heading as="h2" size="md" css={sectionStyle}>
-              Hobbies & Interests
+              <Text css={textStyle}>
+                Hobbies & Interests <FcLike />
+              </Text>
             </Heading>
 
             <Hobbies />
@@ -67,7 +92,9 @@ export default function Home() {
 
           <section id="projects">
             <Heading as="h2" size="md" css={sectionStyle}>
-              Projects
+              <Text css={textStyle}>
+                Projects <FcOpenedFolder />
+              </Text>
             </Heading>
 
             <Projects projects={projects} />

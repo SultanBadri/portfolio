@@ -42,7 +42,7 @@ export function Header() {
             Sultan Badri
           </Heading>
 
-          <Text>Student / Developer / Designer</Text>
+          <Text>Student / Programmer / Designer</Text>
         </Box>
         <Links />
       </Flex>
