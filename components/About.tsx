@@ -14,7 +14,8 @@ export function About() {
 
   return (
     <Box mt={3} mb={4}>
-      A motivated and enthusiastic undergraduate student fueled by a love for{" "}
+      I&apos;m an ambitious and motivated undergraduate student enthusiastic
+      about web development, specifically{" "}
       <Text css={codeStyle} bg={backgroundColor} color={color}>
         front-end
       </Text>{" "}
@@ -22,10 +23,14 @@ export function About() {
       <Text css={codeStyle} bg={backgroundColor} color={color}>
         full-stack
       </Text>{" "}
-      web development. Always on the lookout for new and exciting technologies
-      to master and seeking out internship opportunities to gain valuable
-      hands-on experience in software engineering. Always eager to learn, grow,
-      and make a difference in the field of technology.
+      development. Always eager to learn new and cutting-edge technologies and
+      apply my skills and knowledge in a software engineering internship.
+      Committed to continuous learning, professional growth, and positive impact
+      in the tech industry.
+      {/* I built a website for a school club on the Windows
+      Notepad app back in high school and I&apos;ve been hooked ever since.
+      I&apos;ve been building websites and web apps ever since. My goal is to
+      become a full-time software engineer working on the web. */}
     </Box>
   );
 }
