@@ -25,7 +25,7 @@ const sectionStyle = () => css`
   text-underline-offset: 6px;
   text-decoration-color: #525252;
   text-decoration-thickness: 4px;
-  margin-top: 3px;
+  margin-top: 5px;
   margin-bottom: 4px;
 `;
 

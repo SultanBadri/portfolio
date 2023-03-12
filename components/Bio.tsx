@@ -30,6 +30,10 @@ export function Bio() {
       <Text>
         <strong>2022</strong> Software Programming Instructor
       </Text>
+
+      <Text>
+        <strong>2021 - 2022</strong> Design Project Manager
+      </Text>
     </Box>
   );
 }

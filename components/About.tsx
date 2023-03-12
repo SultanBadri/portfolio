@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { FaAngleDown } from "react-icons/fa";
 import { Text, Box, useColorModeValue } from "@chakra-ui/react";
 
 import { css } from "@emotion/react";
@@ -8,29 +10,88 @@ const codeStyle = css`
   display: inline-block;
 `;
 
+const buttonStyle = css`
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  font-weight: semibold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 export function About() {
-  const color = useColorModeValue("black", "white");
+  const textColorOverride = useColorModeValue("black", "white");
+  const buttonColor = useColorModeValue("pink.600", "pink.400");
   const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
+
+  const [showMore, setShowMore] = useState(false);
+
+  const handleShowMore = () => setShowMore(!showMore);
 
   return (
     <Box mt={3} mb={4}>
       I&apos;m an ambitious and motivated undergraduate student enthusiastic
       about web development, specifically{" "}
-      <Text css={codeStyle} bg={backgroundColor} color={color}>
+      <Text css={codeStyle} bg={backgroundColor}>
         front-end
       </Text>{" "}
       and{" "}
-      <Text css={codeStyle} bg={backgroundColor} color={color}>
+      <Text css={codeStyle} bg={backgroundColor}>
         full-stack
       </Text>{" "}
       development. Always eager to learn new and cutting-edge technologies and
       apply my skills and knowledge in a software engineering internship.
       Committed to continuous learning, professional growth, and positive impact
       in the tech industry.
-      {/* I built a website for a school club on the Windows
-      Notepad app back in high school and I&apos;ve been hooked ever since.
-      I&apos;ve been building websites and web apps ever since. My goal is to
-      become a full-time software engineer working on the web. */}
+      <Box mt={3} color={buttonColor}>
+        <Box as="button" onClick={handleShowMore} css={buttonStyle}>
+          <FaAngleDown
+            style={{
+              transition: "transform 0.2s ease-in-out",
+              transform: `rotate(${showMore ? "180deg" : "0deg"})`,
+            }}
+          />
+
+          <Box as="span" ml="2">
+            {showMore ? "Show less" : "Learn more"}
+          </Box>
+        </Box>
+
+        {showMore && (
+          <Text mt={3} color={textColorOverride}>
+            I discovered my passion for web development in high school, when I
+            built a website for a school club using the Windows Notepad app.
+            Since then, I have been building websites and web apps as a hobby,
+            and eventually decided to pursue it as a career. I used{" "}
+            <Text css={codeStyle} bg={backgroundColor}>
+              The Odin Project
+            </Text>
+            &apos;s Full-stack JavaScript curriculum to further develop my
+            skills and build projects that honed my{" "}
+            <Text css={codeStyle} bg={backgroundColor}>
+              front-end
+            </Text>{" "}
+            skills, while also teaching me{" "}
+            <Text css={codeStyle} bg={backgroundColor}>
+              back-end
+            </Text>{" "}
+            development using{" "}
+            <Text css={codeStyle} bg={backgroundColor}>
+              Node.js
+            </Text>{" "}
+            and{" "}
+            <Text css={codeStyle} bg={backgroundColor}>
+              Express.js
+            </Text>
+            . My ultimate goal is to become a full-time software engineer
+            specializing in web development.
+          </Text>
+        )}
+      </Box>
     </Box>
   );
 }
