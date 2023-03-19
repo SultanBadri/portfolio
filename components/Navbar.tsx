@@ -11,10 +11,7 @@ import { ToggleTheme } from "./ToggleTheme";
 export function Navbar() {
   const [scroll, setScroll] = useState(false);
   const boxShadow = useColorModeValue("0 4px 8px rgba(0, 0, 0, 0.1)", "md");
-  const blur = useColorModeValue(
-    `blur(${scroll ? "8px" : "0"})`,
-    `blur(${scroll ? "16px" : "0"})`
-  );
+  const blur = useColorModeValue("blur(8px)", "blur(16px)");
   const [isBelow1000px] = useMediaQuery("(max-width: 1000px)");
 
   useEffect(() => {
