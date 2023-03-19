@@ -26,7 +26,7 @@ const buttonStyle = css`
 export function About() {
   const textColorOverride = useColorModeValue("black", "white");
   const buttonColor = useColorModeValue("pink.600", "pink.400");
-  const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
+  const backgroundColor = useColorModeValue("gray.200", "gray.700");
 
   const [showMore, setShowMore] = useState(false);
 

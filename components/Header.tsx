@@ -15,7 +15,7 @@ export function Header() {
   return (
     <>
       <Box
-        borderRadius="lg"
+        borderRadius="3xl"
         mt={6}
         mb={6}
         p={3}

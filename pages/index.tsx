@@ -70,16 +70,6 @@ export default function Home() {
             <Bio />
           </section>
 
-          <section id="skills">
-            <Heading as="h2" size="md" css={sectionStyle}>
-              <Text css={textStyle}>
-                Skills <FcSearch />
-              </Text>
-            </Heading>
-
-            <Skills />
-          </section>
-
           <section id="hobbies">
             <Heading as="h2" size="md" css={sectionStyle}>
               <Text css={textStyle}>
@@ -88,6 +78,16 @@ export default function Home() {
             </Heading>
 
             <Hobbies />
+          </section>
+
+          <section id="skills">
+            <Heading as="h2" size="md" css={sectionStyle}>
+              <Text css={textStyle}>
+                Skills <FcSearch />
+              </Text>
+            </Heading>
+
+            <Skills />
           </section>
 
           <section id="projects">

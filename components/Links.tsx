@@ -7,7 +7,7 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
 
 export const linkStyle = (backgroundColorHover: string) => css`
-  padding: 0.375rem;
+  padding: 0.4rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   transition-duration: 100ms;
@@ -20,7 +20,7 @@ export const linkStyle = (backgroundColorHover: string) => css`
 `;
 
 export function Links() {
-  const backgroundColor = useColorModeValue("gray.100", "whiteAlpha.200");
+  const backgroundColor = useColorModeValue("gray.200", "gray.700");
 
   return (
     <Flex align="center" mt={2}>
