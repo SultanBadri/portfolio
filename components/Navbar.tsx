@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import {
   Flex,
@@ -7,6 +8,8 @@ import {
 } from "@chakra-ui/react";
 
 import { ToggleTheme } from "./ToggleTheme";
+
+import favicon from "../public/favicon/favicon.ico";
 
 export function Navbar() {
   const [scroll, setScroll] = useState(false);
@@ -41,11 +44,13 @@ export function Navbar() {
       style={{ backdropFilter: blur }}
     >
       <Flex align="center" mr={5}>
+        <Image src={favicon} alt="SB icon" height="20" />
         <Heading
           as="h2"
           size="md"
           bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
           bgClip="text"
+          pl="0.4rem"
         >
           Sultan Badri
         </Heading>
