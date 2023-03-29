@@ -20,6 +20,7 @@ export const linkStyle = (backgroundColorHover: string) => css`
 `;
 
 export function Links() {
+  const color = useColorModeValue("black", "white");
   const backgroundColor = useColorModeValue("gray.200", "gray.700");
 
   return (
@@ -31,6 +32,7 @@ export function Links() {
           aria-label="GitHub"
           css={linkStyle("#333")}
           bg={backgroundColor}
+          color={color}
         >
           <FaGithub />
         </Link>
@@ -43,6 +45,7 @@ export function Links() {
           aria-label="LinkedIn"
           css={linkStyle("#0A66C2")}
           bg={backgroundColor}
+          color={color}
         >
           <FaLinkedin />
         </Link>
@@ -55,6 +58,7 @@ export function Links() {
           aria-label="Email"
           css={linkStyle("#0099ff")}
           bg={backgroundColor}
+          color={color}
         >
           <FaEnvelope />
         </Link>

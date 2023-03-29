@@ -5,11 +5,12 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { Project } from "./Projects";
 
 export function ProjectCard({ title, technologies, repoUrl }: Project) {
+  const projectHeaderColor = useColorModeValue("black", "white");
   const linkColor = useColorModeValue("pink.600", "pink.400");
 
   return (
     <Box w="300px" mt={4}>
-      <Heading as="h3" size="sm">
+      <Heading as="h3" size="sm" color={projectHeaderColor}>
         {title}
       </Heading>
 

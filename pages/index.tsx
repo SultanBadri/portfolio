@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Container, Heading, Text } from "@chakra-ui/react";
+import { Container, Heading, Text, useColorModeValue } from "@chakra-ui/react";
 import {
   FcAbout,
   FcPlanner,
@@ -40,6 +40,9 @@ const textStyle = () => css`
 `;
 
 export default function Home() {
+  const headerColor = useColorModeValue("black", "white");
+  const textColor = useColorModeValue("blackAlpha.800", "whiteAlpha.800");
+
   return (
     <>
       <Head>
@@ -47,12 +50,12 @@ export default function Home() {
       </Head>
 
       <main>
-        <Container maxW="2xl">
+        <Container maxW="2xl" color={textColor}>
           <Header />
 
           <section id="about">
             <Heading as="h2" size="md" css={sectionStyle}>
-              <Text css={textStyle}>
+              <Text css={textStyle} color={headerColor}>
                 About me <FcAbout />
               </Text>
             </Heading>
@@ -62,7 +65,7 @@ export default function Home() {
 
           <section id="bio">
             <Heading as="h2" size="md" css={sectionStyle}>
-              <Text css={textStyle}>
+              <Text css={textStyle} color={headerColor}>
                 Work & Education <FcPlanner />
               </Text>
             </Heading>
@@ -72,7 +75,7 @@ export default function Home() {
 
           <section id="hobbies">
             <Heading as="h2" size="md" css={sectionStyle}>
-              <Text css={textStyle}>
+              <Text css={textStyle} color={headerColor}>
                 Hobbies & Interests <FcLike />
               </Text>
             </Heading>
@@ -82,7 +85,7 @@ export default function Home() {
 
           <section id="skills">
             <Heading as="h2" size="md" css={sectionStyle}>
-              <Text css={textStyle}>
+              <Text css={textStyle} color={headerColor}>
                 Skills <FcSearch />
               </Text>
             </Heading>
@@ -92,7 +95,7 @@ export default function Home() {
 
           <section id="projects">
             <Heading as="h2" size="md" css={sectionStyle}>
-              <Text css={textStyle}>
+              <Text css={textStyle} color={headerColor}>
                 Projects <FcOpenedFolder />
               </Text>
             </Heading>

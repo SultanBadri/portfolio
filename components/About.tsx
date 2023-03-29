@@ -5,18 +5,23 @@ import { Text, Box, useColorModeValue } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 
 const codeStyle = css`
-  border-radius: 3px;
-  padding: 2px 4px;
   display: inline-block;
+  font-weight: 600;
+
+  &::before {
+    content: "\`";
+  }
+
+  &::after {
+    content: "\`";
+  }
 `;
 
 const buttonStyle = css`
   display: inline-flex;
   align-items: center;
   color: inherit;
-  font-weight: semibold;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
 
   &:hover {
     text-decoration: underline;
@@ -24,23 +29,26 @@ const buttonStyle = css`
 `;
 
 export function About() {
-  const textColorOverride = useColorModeValue("black", "white");
+  const textColorOverride = useColorModeValue(
+    "blackAlpha.800",
+    "whiteAlpha.800"
+  );
+  const wordColorOverride = useColorModeValue("black", "white");
   const buttonColor = useColorModeValue("pink.600", "pink.400");
-  const backgroundColor = useColorModeValue("gray.200", "gray.700");
 
   const [showMore, setShowMore] = useState(false);
 
   const handleShowMore = () => setShowMore(!showMore);
 
   return (
-    <Box mt={3} mb={4}>
+    <Box mt={3} mb={4} lineHeight={7}>
       I&apos;m an ambitious and motivated undergraduate student enthusiastic
       about web development, specifically{" "}
-      <Text css={codeStyle} bg={backgroundColor}>
+      <Text css={codeStyle} color={wordColorOverride}>
         front-end
       </Text>{" "}
       and{" "}
-      <Text css={codeStyle} bg={backgroundColor}>
+      <Text css={codeStyle} color={wordColorOverride}>
         full-stack
       </Text>{" "}
       development. Always eager to learn new and cutting-edge technologies and
@@ -67,27 +75,23 @@ export function About() {
             built a website for a school club using the Windows Notepad app.
             Since then, I have been building websites and web apps as a hobby,
             and eventually decided to pursue it as a career. I used{" "}
-            <Text css={codeStyle} bg={backgroundColor}>
+            <Text css={codeStyle} color={wordColorOverride}>
               The Odin Project
             </Text>
             &apos;s Full-stack JavaScript curriculum to further develop my
             skills and build projects that honed my{" "}
-            <Text css={codeStyle} bg={backgroundColor}>
+            <Text css={codeStyle} color={wordColorOverride}>
               front-end
             </Text>{" "}
             skills, while also teaching me{" "}
-            <Text css={codeStyle} bg={backgroundColor}>
+            <Text css={codeStyle} color={wordColorOverride}>
               back-end
             </Text>{" "}
-            development using{" "}
-            <Text css={codeStyle} bg={backgroundColor}>
-              Node.js
+            development using the{" "}
+            <Text css={codeStyle} color={wordColorOverride}>
+              MERN
             </Text>{" "}
-            and{" "}
-            <Text css={codeStyle} bg={backgroundColor}>
-              Express.js
-            </Text>
-            . My ultimate goal is to become a full-time software engineer
+            stack. My ultimate goal is to become a full-time software engineer
             specializing in web development.
           </Text>
         )}

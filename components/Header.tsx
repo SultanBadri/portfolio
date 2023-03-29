@@ -44,6 +44,7 @@ export function Header() {
 
           <Text>Student / Programmer / Designer</Text>
         </Box>
+
         <Links />
       </Flex>
     </>
