@@ -70,6 +70,11 @@ export const icons = [
     name: "R",
   },
   {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
+    alt: "Rust logo",
+    name: "Rust",
+  },
+  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
     alt: "Jest logo",
     name: "Jest",

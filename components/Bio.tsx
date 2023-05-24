@@ -19,12 +19,28 @@ export function Bio() {
         Studying @
         <Text
           as="span"
-          bgGradient="linear(to-r, pink.500, pink.300, blue.500)"
+          bgGradient="linear(to-r, yellow.400, blue.500)"
           bgClip="text"
           fontWeight="bolder"
           paddingLeft={1}
         >
           UC Berkeley
+        </Text>
+      </Flex>
+
+      <Flex>
+        <Text css={yearStyle} color={yearColor}>
+          2023
+        </Text>
+        SWE Intern @
+        <Text
+          as="span"
+          bgGradient="linear(to-r, green.300, green.500)"
+          bgClip="text"
+          fontWeight="bolder"
+          paddingLeft={1}
+        >
+          Dexcom
         </Text>
       </Flex>
 
