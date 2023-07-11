@@ -3,7 +3,7 @@ import { Flex, Text, Box, useColorModeValue } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 
 const yearStyle = () => css`
-  font-weight: 600;
+  font-weight: bold;
   padding-right: 5px;
 `;
 
@@ -16,7 +16,7 @@ export function Bio() {
         <Text css={yearStyle} color={yearColor}>
           2020 - 2023
         </Text>
-        Studying @
+        Student @
         <Text
           as="span"
           bgGradient="linear(to-r, yellow.400, blue.500)"

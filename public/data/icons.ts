@@ -35,21 +35,6 @@ export const icons = [
     name: "MongoDB",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-    alt: "Angular logo",
-    name: "Angular",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
-    alt: "Svelte logo",
-    name: "Svelte",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
-    alt: "GraphQL logo",
-    name: "GraphQL",
-  },
-  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     alt: "Python logo",
     name: "Python",
@@ -70,9 +55,24 @@ export const icons = [
     name: "R",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
-    alt: "Rust logo",
-    name: "Rust",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    alt: "Angular logo",
+    name: "Angular",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    alt: "Vue.js logo",
+    name: "Vue.js",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+    alt: "Svelte logo",
+    name: "Svelte",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    alt: "GraphQL logo",
+    name: "GraphQL",
   },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
@@ -88,6 +88,11 @@ export const icons = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
     alt: "jQuery logo",
     name: "jQuery",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg",
+    alt: "Storybook logo",
+    name: "Storybook",
   },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
@@ -120,33 +125,13 @@ export const icons = [
     name: "Git",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
-    alt: "Heroku logo",
-    name: "Heroku",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg",
-    alt: "Storybook logo",
-    name: "Storybook",
-  },
-  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
     alt: "Webpack logo",
     name: "Webpack",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
-    alt: "Pandas logo",
-    name: "Pandas",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
-    alt: "Jupyter logo",
-    name: "Jupyter",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-    alt: "Figma logo",
-    name: "Figma",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    alt: "Docker logo",
+    name: "Docker",
   },
 ];

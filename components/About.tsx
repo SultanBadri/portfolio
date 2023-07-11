@@ -6,7 +6,7 @@ import { css } from "@emotion/react";
 
 const codeStyle = css`
   display: inline-block;
-  font-weight: 600;
+  font-weight: bold;
 
   &::before {
     content: "\`";
