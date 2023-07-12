@@ -110,16 +110,6 @@ export const icons = [
     name: "Sass",
   },
   {
-    src: "svgs/styled-components.svg",
-    alt: "Styled Components logo",
-    name: "Styled Components",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-    alt: "Tailwind CSS logo",
-    name: "Tailwind CSS",
-  },
-  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     alt: "Git logo",
     name: "Git",

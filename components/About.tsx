@@ -6,7 +6,7 @@ import { css } from "@emotion/react";
 
 const codeStyle = css`
   display: inline-block;
-  font-weight: bold;
+  font-weight: 600;
 
   &::before {
     content: "\`";
@@ -29,10 +29,7 @@ const buttonStyle = css`
 `;
 
 export function About() {
-  const textColorOverride = useColorModeValue(
-    "blackAlpha.800",
-    "whiteAlpha.800"
-  );
+  const textColorOverride = useColorModeValue("blackAlpha.800", "#94a3b8");
   const wordColorOverride = useColorModeValue("black", "white");
   const buttonColor = useColorModeValue("pink.600", "pink.400");
 

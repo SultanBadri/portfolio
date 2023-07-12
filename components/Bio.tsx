@@ -3,7 +3,7 @@ import { Flex, Text, Box, useColorModeValue } from "@chakra-ui/react";
 import { css } from "@emotion/react";
 
 const yearStyle = () => css`
-  font-weight: bold;
+  font-weight: 600;
   padding-right: 5px;
 `;
 

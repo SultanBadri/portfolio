@@ -1,5 +1,10 @@
 export const projects = [
   {
+    title: "Regex Interpreter",
+    technologies: "Vue.js, Go",
+    repoUrl: "https://github.com/SultanBadri/regex-interpreter",
+  },
+  {
     title: "Current Portfolio",
     technologies: "Next.js, TypeScript, Chakra UI",
     repoUrl: "https://github.com/SultanBadri/portfolio",

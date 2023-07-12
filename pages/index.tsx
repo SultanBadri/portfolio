@@ -41,7 +41,7 @@ const textStyle = () => css`
 
 export default function Home() {
   const headerColor = useColorModeValue("black", "white");
-  const textColor = useColorModeValue("blackAlpha.800", "whiteAlpha.800");
+  const textColor = useColorModeValue("blackAlpha.800", "#94a3b8");
 
   return (
     <>
