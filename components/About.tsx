@@ -39,19 +39,17 @@ export function About() {
 
   return (
     <Box mt={3} mb={4} lineHeight={7}>
-      I&apos;m an ambitious and motivated undergraduate student enthusiastic
-      about web development, specifically{" "}
+      I&apos;m an ambitious and motivated student enthusiastic about{" "}
       <Text css={codeStyle} color={wordColorOverride}>
-        front-end
+        programming
       </Text>{" "}
       and{" "}
       <Text css={codeStyle} color={wordColorOverride}>
-        full-stack
-      </Text>{" "}
-      development. Always eager to learn new and cutting-edge technologies and
-      apply my skills and knowledge in a software engineering internship.
-      Committed to continuous learning, professional growth, and positive impact
-      in the tech industry.
+        software development
+      </Text>
+      . Always looking to enhance my existing skills while eagerly embracing new
+      ones to apply to real-world projects. Committed to continuous learning,
+      professional growth, and making a positive impact in the tech industry.
       <Box mt={3} color={buttonColor}>
         <Box as="button" onClick={handleShowMore} css={buttonStyle}>
           <FaAngleDown
@@ -68,10 +66,10 @@ export function About() {
 
         {showMore && (
           <Text mt={3} color={textColorOverride}>
-            I discovered my passion for web development in high school, when I
-            built a website for a school club using the Windows Notepad app.
-            Since then, I have been building websites and web apps as a hobby,
-            and eventually decided to pursue it as a career. I used{" "}
+            I discovered my passion for programming in high school, when I built
+            a website for a school club using the Windows Notepad app. Since
+            then, I have been building websites and web apps as a hobby, and
+            eventually decided to pursue it as a career. I used{" "}
             <Text css={codeStyle} color={wordColorOverride}>
               The Odin Project
             </Text>
@@ -82,14 +80,13 @@ export function About() {
             </Text>{" "}
             skills, while also teaching me{" "}
             <Text css={codeStyle} color={wordColorOverride}>
-              back-end
+              full-stack
             </Text>{" "}
             development using the{" "}
             <Text css={codeStyle} color={wordColorOverride}>
               MERN
             </Text>{" "}
-            stack. My ultimate goal is to become a full-time software engineer
-            specializing in web development.
+            stack. My goal is to develop software professionally!
           </Text>
         )}
       </Box>

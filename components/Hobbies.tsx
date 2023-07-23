@@ -4,8 +4,8 @@ export function Hobbies() {
   return (
     <Box mt={3} mb={4}>
       <Text>
-        Programming 👨‍💻, Video Games 🕹️, Board Games 🎲, MMA 🥋, Learning Spanish
-        📖, YouTube 📺, and more!
+        Programming 👨‍💻, Video Games 🕹️, MMA 🥋, Language Learning 📖, Board
+        Games 🎲, and more!
       </Text>
     </Box>
   );
