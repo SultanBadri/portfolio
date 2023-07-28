@@ -1,13 +1,28 @@
 export const icons = [
   {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    alt: "JavaScript logo",
+    name: "JavaScript",
+  },
+  {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     alt: "TypeScript logo",
     name: "TypeScript",
   },
   {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    alt: "JavaScript logo",
-    name: "JavaScript",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    alt: "Python logo",
+    name: "Python",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
+    alt: "Java logo",
+    name: "Java",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+    alt: "Go logo",
+    name: "Go",
   },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
@@ -33,26 +48,6 @@ export const icons = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     alt: "MongoDB logo",
     name: "MongoDB",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    alt: "Python logo",
-    name: "Python",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg",
-    alt: "Java logo",
-    name: "Java",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
-    alt: "Go logo",
-    name: "Go",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg",
-    alt: "R logo",
-    name: "R",
   },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
@@ -83,11 +78,6 @@ export const icons = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     alt: "Redux logo",
     name: "Redux",
-  },
-  {
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
-    alt: "jQuery logo",
-    name: "jQuery",
   },
   {
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/storybook/storybook-original.svg",
