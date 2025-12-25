@@ -1,6 +1,6 @@
 # Next.js Portfolio Website
 
-A simple personal [portfolio website](https://sultanbadri.vercel.app/) using Next.js, TypeScript, and Chakra UI.
+A simple personal portfolio website using Next.js, TypeScript, and Chakra UI.
 
 https://github.com/user-attachments/assets/1ceb5fdb-1f40-4acc-96a3-44c2a0bcbcc4
 
